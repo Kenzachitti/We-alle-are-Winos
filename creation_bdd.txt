@@ -1,37 +1,36 @@
 create database waaw;
-CREATE TABLE waaw.equipe_waaw (
+create table waaw.equipe_waaw (
     id_equipe MEDIUMINT NOT NULL AUTO_INCREMENT,
     mail_equipe CHAR(55),
     PRIMARY KEY (id_equipe)
 );
-CREATE TABLE waaw.article (
+create table waaw.article (
     id_article MEDIUMINT NOT NULL AUTO_INCREMENT,
     intitule_article CHAR(100),
     texte_article LONGTEXT,
     url_media MEDIUMTEXT,
     PRIMARY KEY (id_article)
 );
-
-CREATE TABLE waaw.utilisateur (
+create table waaw.utilisateur (
    id_utilisateur MEDIUMINT NOT NULL AUTO_INCREMENT,
    mail_utilisateur CHAR(55),
    mdp_utilisateur CHAR(55),
    adresse_utilisateur CHAR(100),
    PRIMARY KEY (id_utilisateur)
 );
-CREATE TABLE waaw.commande (
+create table waaw.commande (
   id_commande MEDIUMINT NOT NULL AUTO_INCREMENT,
   date_commande DATETIME,
   date_livraison_commande DATETIME,
   PRIMARY KEY (id_commande)
 );
-CREATE TABLE waaw.fournisseur (
+create table waaw.fournisseur (
    id_fournisseur MEDIUMINT NOT NULL AUTO_INCREMENT,
    nom_fournisseur CHAR(55),
    mail_fournisseur CHAR(55),
    PRIMARY KEY (id_fournisseur)
 );
-CREATE TABLE waaw.tag (
+create table waaw.tag (
    id_tag MEDIUMINT NOT NULL AUTO_INCREMENT,
    tag_accords CHAR(55),
    tag_gout CHAR(55),
@@ -57,8 +56,7 @@ create table waaw.fiche_produit(
 );
 
 
-
-CREATE TABLE waaw.liste_des_coffrets (
+create table waaw.liste_des_coffrets (
 id_coffret MEDIUMINT NOT NULL AUTO_INCREMENT,
    nom_coffret CHAR(55),
    id_fiche MEDIUMINT,
@@ -66,8 +64,7 @@ id_coffret MEDIUMINT NOT NULL AUTO_INCREMENT,
    PRIMARY KEY (id_coffret),
    FOREIGN KEY (id_fiche) REFERENCES fiche_produit(id_fiche)
 );
-
-CREATE TABLE waaw.panier (
+create table waaw.panier (
     id_panier MEDIUMINT NOT NULL AUTO_INCREMENT,
     liste_fiche_produit MEDIUMINT,
     id_utilisateur MEDIUMINT,
@@ -76,7 +73,7 @@ CREATE TABLE waaw.panier (
     FOREIGN KEY (id_utilisateur) REFERENCES utilisateur(id_utilisateur)
 );
 
-CREATE TABLE waaw.article_equipe_waaw (
+create table waaw.article_equipe_waaw (
     id_article MEDIUMINT,
     id_equipe MEDIUMINT,
     PRIMARY KEY (id_article, id_equipe)
@@ -85,7 +82,7 @@ CREATE TABLE waaw.article_equipe_waaw (
     
 );
 
-CREATE TABLE waaw.equipe_waaw_utilisateur (
+create table waaw.equipe_waaw_utilisateur (
     id_equipe MEDIUMINT,
     id_utilisateur MEDIUMINT,
     PRIMARY KEY (id_equipe, id_utilisateur)
@@ -101,7 +98,7 @@ CREATE TABLE waaw.utilisateur_commande (
     FOREIGN KEY (id_commande) REFERENCES commande(id_commande),
     
 );
-CREATE TABLE waaw.fiche_produit_liste_des_coffrets (
+create table waaw.fiche_produit_liste_des_coffrets (
     id_fiche MEDIUMINT,
     id_coffret MEDIUMINT,
     PRIMARY KEY (id_fiche, id_coffret)
@@ -111,7 +108,7 @@ CREATE TABLE waaw.fiche_produit_liste_des_coffrets (
 );
 
 
-CREATE TABLE waaw.fiche_produit_commande (
+create table waaw.fiche_produit_commande (
     id_fiche MEDIUMINT, 
     id_commande MEDIUMINT,
     PRIMARY KEY (id_fiche, id_commande)
@@ -119,8 +116,7 @@ CREATE TABLE waaw.fiche_produit_commande (
     FOREIGN KEY (id_commande) REFERENCES commande(id_commande),
     
 );
-
-CREATE TABLE waaw.fiche_produit_tag (
+create table waaw.fiche_produit_tag (
     id_fiche MEDIUMINT,
     id_tag MEDIUMINT,
     PRIMARY KEY (id_fiche, id_tag)
