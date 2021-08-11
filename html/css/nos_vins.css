@@ -1,0 +1,85 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > div:last-child {
+    font-weight: bold;
+} 
+
+div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main > div:last-child > div > div > div:nth-child(3) > div {
+    text-align: center;
+    font-weight: normal;
+} 
+
+main > div:last-child > div > div > div:nth-child(3) > div:last-child {
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+main > div:last-child > div > div > div:nth-child(4) > div > a {
+    background: #9e121b;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+main > div:last-child > div > div > div:nth-child(4) > div {
+    text-align: center;
+} 
+
+.click-me {
+    -moz-appearance: button;
+    -ms-appearance: button;
+    -o-appearance: button;
+    -webkit-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: #000;
+    padding: 0.2em 0.4em;
+}​
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main > div:first-child {
+    background: #f3f3f3;
+    align-items: baseline;
+}
+
+main > div:first-child > form:first-child > input {
+    border-radius: 5px;
+}
+
+main > div:last-child > div > div > div:first-child {
+    color : #9e121b;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+main > div:last-child > div > div {
+    background: #f3f3f3 ;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+main > div:last-child {
+    margin-top: 50px;
+}
+
+img {
+    width: 20%;
+} 
+
+main > div:last-child > div > div > div:nth-child(2) {
+    text-align: center;
+}
