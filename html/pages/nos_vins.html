@@ -21,9 +21,6 @@
 
             <!-- Barre de selection des filtres -->
             <div class="row">
-                <!-- <div class= "col-12 col-md-4">
-                    barre de recherche
-                </div> -->
                 <form class= "col-12 col-md-3"> 
                     <input type="text" name="text" class="search" placeholder="Recherchez un vin">
                     <input type="submit" name="submit" class="submit" value="Search">
@@ -40,9 +37,11 @@
                 <form class="col-6 col-md-2">
                     <input type="checkbox" name="choix4" value="4" > Rouge
                 </form>
-                <div class = "col-12 col-md-3">
-                    prix avec fourchette
+                <div class="col-12 col-md-3 row">
+                    <p>Prix</p>
+                    <input type="range" min="1" max="200" value="50" class="slider" id="myRange">
                 </div>
+                
             </div>
 
             <!-- Les vignettes avec les vins -->
@@ -51,152 +50,170 @@
 
                 <div class = "col-12 col-md-4">
                     <div>
-                        Mon premier vin
+                        <div>
+                            Mon premier vin
+                        </div>
+                        <div>
+                            <img src="../images/champagne.png" alt="vin">
+                        </div>
+                        <div class="row">
+                            <div class = "col-8">
+                                Courte description du vin
+                            </div>
+                            <div class = "col-4">
+                                20,50 €
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="click-me" href="./panier.html">Ajouter au panier</a>
+                            </div>
+                            
+                            <div class="col-6">
+                                <a class="click-me" href="./fiche_presentation.html">Description du vin</a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <div class = "col-12 col-md-4">
                     <div>
-                        <img src="../images/champagne.png" alt="vin">
-                    </div>
-                    <div class="row">
-                        <div class = "col-8">
-                            Courte description du vin
+                        <div >
+                            Mon deuxieme vin
                         </div>
-                        <div class = "col-4">
-                            prix
+                        <div >
+                            <img src="../images/champagne.png" alt="vin">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            Bouton Ajouter au panier
+                        <div class="row">
+                            <div class = "col-8">
+                                Courte description du vin
+                            </div>
+                            <div class = "col-4">
+                                20,50 €
+                            </div>
                         </div>
-                        <div class="col-6">
-                            Bouton Description du vin
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="click-me" href="./panier.html">Ajouter au panier</a>
+                            </div>
+                            
+                            <div class="col-6">
+                                <a class="click-me" href="./fiche_presentation.html">Description du vin</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class = "col-12 col-md-4">
+                    <div>
+                        <div >
+                            Mon troisieme vin
+                        </div>
+                        <div >
+                            <img src="../images/champagne.png" alt="vin">
+                        </div>
+                        <div class="row">
+                            <div class = "col-8">
+                                Courte description du vin
+                            </div>
+                            <div class = "col-4">
+                                20,50 €
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="click-me" href="./panier.html">Ajouter au panier</a>
+                            </div>
+                            
+                            <div class="col-6">
+                                <a class="click-me" href="./fiche_presentation.html">Description du vin</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class = "col-12 col-md-4">
+                    <div>
+                        <div >
+                            Mon quatrieme vin
+                        </div>
+                        <div >
+                            <img src="../images/champagne.png" alt="vin">
+                        </div>
+                        <div class="row">
+                            <div class = "col-8">
+                                Courte description du vin
+                            </div>
+                            <div class = "col-4">
+                                20,50 €
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="click-me" href="./panier.html">Ajouter au panier</a>
+                            </div>
+                            
+                            <div class="col-6">
+                                <a class="click-me" href="./fiche_presentation.html">Description du vin</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class = "col-12 col-md-4">
-                    <div >
-                        Mon deuxieme vin
-                    </div>
-                    <div >
-                        <img src="../images/champagne.png" alt="vin">
-                    </div>
-                    <div class="row">
-                        <div class = "col-8">
-                            Courte description du vin
+                    <div>
+                        <div >
+                            Mon cinquieme vin
                         </div>
-                        <div class = "col-4">
-                            prix
+                        <div >
+                            <img src="../images/champagne.png" alt="vin">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            Bouton Ajouter au panier
+                        <div class="row">
+                            <div class = "col-8">
+                                Courte description du vin
+                            </div>
+                            <div class = "col-4">
+                                20,50 €
+                            </div>
                         </div>
-                        <div class="col-6">
-                            Bouton Description du vin
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "col-12 col-md-4">
-                    <div >
-                        Mon troisieme vin
-                    </div>
-                    <div >
-                        <img src="../images/champagne.png" alt="vin">
-                    </div>
-                    <div class="row">
-                        <div class = "col-8">
-                            Courte description du vin
-                        </div>
-                        <div class = "col-4">
-                            prix
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            Bouton Ajouter au panier
-                        </div>
-                        <div class="col-6">
-                            Bouton Description du vin
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="click-me" href="./panier.html">Ajouter au panier</a>
+                            </div>
+                            
+                            <div class="col-6">
+                                <a class="click-me" href="./fiche_presentation.html">Description du vin</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class = "col-12 col-md-4">
-                    <div >
-                        Mon quatrieme vin
-                    </div>
-                    <div >
-                        <img src="../images/champagne.png" alt="vin">
-                    </div>
-                    <div class="row">
-                        <div class = "col-8">
-                            Courte description du vin
+                    <div>
+                        <div >
+                            Mon sixieme vin
                         </div>
-                        <div class = "col-4">
-                            prix
+                        <div >
+                            <img src="../images/champagne.png" alt="vin">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            Bouton Ajouter au panier
+                        <div class="row">
+                            <div class = "col-8">
+                                Courte description du vin
+                            </div>
+                            <div class = "col-4">
+                                20,50 €
+                            </div>
                         </div>
-                        <div class="col-6">
-                            Bouton Description du vin
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="click-me" href="./panier.html">Ajouter au panier</a>
+                            </div>
+                            
+                            <div class="col-6">
+                                <a class="click-me" href="./fiche_presentation.html">Description du vin</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class = "col-12 col-md-4">
-                    <div >
-                        Mon cinquieme vin
-                    </div>
-                    <div >
-                        <img src="../images/champagne.png" alt="vin">
-                    </div>
-                    <div class="row">
-                        <div class = "col-8">
-                            Courte description du vin
-                        </div>
-                        <div class = "col-4">
-                            prix
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            Bouton Ajouter au panier
-                        </div>
-                        <div class="col-6">
-                            Bouton Description du vin
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "col-12 col-md-4">
-                    <div >
-                        Mon sixieme vin
-                    </div>
-                    <div >
-                        <img src="../images/champagne.png" alt="vin">
-                    </div>
-                    <div class="row">
-                        <div class = "col-8">
-                            Courte description du vin
-                        </div>
-                        <div class = "col-4">
-                            prix
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            Bouton Ajouter au panier
-                        </div>
-                        <div class="col-6">
-                            Bouton Description du vin
-                        </div>
-                    </div>
+                    </div>    
                 </div>
 
             </div>
