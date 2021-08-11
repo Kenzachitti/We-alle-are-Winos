@@ -1,0 +1,33 @@
+
+header {
+    background: #9e121b;
+    display: flex;
+
+    /*padding: 2rem 1rem;*/
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black ;
+    border-radius: 10%;
+}
+
+.nav {
+    display: flex;
+}
+
+p, a {
+    font-style: normal;
+    font-family : 'lobster two', cursive ;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
