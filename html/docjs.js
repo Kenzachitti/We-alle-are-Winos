@@ -22,6 +22,3 @@ let openNav = ()=>{
     
     }
 
-
-//events
-btnNav.addEventListener('click',openNav);
