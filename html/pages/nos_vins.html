@@ -7,14 +7,44 @@
          <meta name="description" content="Voici tous nos délicieux vins">
          <link rel="stylesheet" href="../CSS/nos_vins.css">
          <link rel="stylesheet" href="../CSS/grille.css">
+         <link rel="stylesheet" href="../css/style.css"> 
          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos&display=swap">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap">
+
     </head>
 
     <body>
         
-        <header>
-
-
+        <header class = "fixed container">
+    
+            <div class = "logo"> 
+                <img src="../images/WAAW.jpg" alt="Avatar">
+                <p>We are all Winos</p>
+            </div>
+        
+            <div class = "container">
+                <div id= "search_bar">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class = "nav">
+                    <a href="../pages/nos_vins.html"> Nos Vins </a>
+                    <a href="../pages/nos_coffrets.html"> Nos Coffrets </a>
+                    <a href="../pages/nos_fournisseurs.html"> Nos Fournisseurs </a>
+                    <a href="../pages/qui_sommes_nous.html"> Qui Sommes Nous </a>
+                    <a href="../pages/blog.html"> Blog </a>
+                    <a href="../pages/espace_client.html"> Espace Client </a>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div>
+                    <i class="far fa-user"></i>
+                </div>
+            </div>
+        
         </header>
 
         <main>
@@ -22,8 +52,8 @@
             <!-- Barre de selection des filtres -->
             <div class="row">
                 <form class= "col-12 col-md-3"> 
-                    <input type="text" name="text" class="search" placeholder="Recherchez un vin">
-                    <input type="submit" name="submit" class="submit" value="Search">
+                    <input type="text" name="text" placeholder="Recherchez un vin" id="case">
+                    <input type="submit" name="submit" value="Search">
                 </form>
                 <form class="col-6 col-md-1">
                     <input type="checkbox" name="choix1" value="1" > Blanc
@@ -58,7 +88,7 @@
                         </div>
                         <div class="row">
                             <div class = "col-8">
-                                Courte description du vin Courte description du vin Courte description du vin Courte description du vin Courte description du vin Courte description du vin
+                                Courte description du vin 
                             </div>
                             <div class = "col-4">
                                 20,50 €

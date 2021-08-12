@@ -8,13 +8,42 @@
          <link rel="stylesheet" href="../CSS/fiche_presentation.css">
          <link rel="stylesheet" href="../CSS/grille.css">
          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos&display=swap">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap">
+         <link rel="stylesheet" href="../css/style.css"> 
     </head>
 
     <body>
         
-        <header>
-
-
+        <header class = "fixed container">
+    
+            <div class = "logo"> 
+                <img src="../images/WAAW.jpg" alt="Avatar">
+                <p>We are all Winos</p>
+            </div>
+        
+            <div class = "container">
+                <div id= "search_bar">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class = "nav">
+                    <a href="../pages/nos_vins.html"> Nos Vins </a>
+                    <a href="../pages/nos_coffrets.html"> Nos Coffrets </a>
+                    <a href="../pages/nos_fournisseurs.html"> Nos Fournisseurs </a>
+                    <a href="../pages/qui_sommes_nous.html"> Qui Sommes Nous </a>
+                    <a href="../pages/blog.html"> Blog </a>
+                    <a href="../pages/espace_client.html"> Espace Client </a>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div>
+                    <i class="far fa-user"></i>
+                </div>
+            </div>
+        
         </header>
 
         <main>
@@ -47,10 +76,14 @@
                             Gôut :
                         </div>
                         <div class="col-4 col-md-4 centrer">
-                            Puissant
+                            <div>
+                                Puissant
+                            </div> 
                         </div>
                         <div class="col-4 col-md-4 centrer">
-                            Fruité
+                            <div>
+                                Fruité
+                            </div> 
                         </div>
                     </div>
 
@@ -60,15 +93,19 @@
                             Accords :
                         </div>
                         <div class="col-4 col-md-4 centrer">
-                            Viande
+                            <div>
+                                Viande
+                            </div> 
                         </div>
                         <div class="col-4 col-md-4 centrer">
-                            Fromage
+                             <div>
+                                Fromage
+                             </div> 
                         </div>
                     </div>
 
                     <div>
-                        Ajouter un commentaire
+                        <input type="text" name="commentaire" value="Ajouter un commentaire" id="case1">
                     </div>
                 </div>
 
@@ -89,19 +126,19 @@
                         Quantité
                     </div>
                     <div>
-                        box avec quantité
+                        <input type="text" name="quantite" value="Ajouter la quantité" id="case2">
                     </div>
                     <div class="centrer">
-                        Bouton ajouter au panier
+                        <a class="click-me" href="./panier.html">Ajouter au panier</a>
                     </div>
                     <div>
-                        ligne
+                        <hr size="5" width="100%" color="grey">
                     </div>
                     <div class="centrer">
                         Livraison en 3 à 5 jours ouvrés à domicile ou dans un point relais.
                     </div>
                     <div>
-                        ligne
+                        <hr size="5" width="100%" color="grey">
                     </div>
                     <div>
                         <ul>
