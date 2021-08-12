@@ -1,0 +1,50 @@
+main {
+    font-family: 'Tinos', serif;
+}
+
+main > div > div{
+    background: #f3f3f3;
+    border-radius: 15px;
+    margin: 30px 15px;
+    padding: 15px;
+
+}
+
+main > div > div > div:first-child {
+    justify-content: space-between;
+}
+
+main > div > div > div:first-child > div:first-child {
+    color: #9e121b;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 15px;
+}
+
+main > div > div > div:first-child > div:last-child {
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+}
+
+main > div > div > div:first-child {
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+main > div > div> div:nth-child(2) > img {
+    width : 100%;
+}
+
+main > div > div > div:nth-child(3) {
+    color: #9e121b;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+main > div > div> div:last-child {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
