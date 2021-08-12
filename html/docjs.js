@@ -1,5 +1,4 @@
-let btnNav = document.getElementById('icon');
-// console.log(btn);
+let btnNav = document.querySelector('icon');
 let nav = document.querySelector('nav');
 let shadow = document.querySelector('#shadow');
 
