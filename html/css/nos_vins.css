@@ -42,7 +42,7 @@ main > div:last-child > div > div > div:nth-child(4) > div {
     padding: 0.4em 0.8em;
 }​ 
 
-p {
+main > div > div:last-child > p {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -74,10 +74,15 @@ main > div:last-child {
     margin-top: 50px;
 }
 
-img {
+main > div:nth-child(2) > div > div > div:nth-child(2) > img {
     width: 20%;
 } 
 
 main > div:last-child > div > div > div:nth-child(2) {
     text-align: center;
+}
+
+#case {
+    border : 1px solid grey;
+    background: white;
 }
