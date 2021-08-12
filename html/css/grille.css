@@ -1,7 +1,7 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black;
     min-height: 50px;
-    background: rgba(0,0,0,.2);
+    background: rgba(0,0,0,.2); */
     box-sizing: border-box;
 }
 /* selecteur * permet de tout selectionner */
@@ -16,7 +16,7 @@
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     /* pour qu'ils ne soient pas les uns par dessus les autres */
 }
 
