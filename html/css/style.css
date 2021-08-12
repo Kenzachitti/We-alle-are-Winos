@@ -155,9 +155,16 @@ hr {
 }
 
 
-
-
-nav {
+#shadow {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  nav {
     position: fixed;
     width: 0px;
     height: 100%;
@@ -180,7 +187,6 @@ nav {
     background: rgb(63, 63, 63);
     color: #fff;
   }
-  
   ul {
     padding: 0;
   }
