@@ -6,7 +6,7 @@ header {
     /*padding: 2rem 1rem;*/
 }
 
-img {
+header > div:first-child > img {
     width: 80px;
     height: 80px;
     border: 1px solid black ;
@@ -19,12 +19,20 @@ img {
     
 }
 
-p, a {
+header> div:nth-child(2) > div:nth-child(2) >  a  {
     font-style: normal;
     font-family : 'lobster two', cursive ;
     color: white;
     padding: 10px;
 }
+
+header> div:first-child > p {
+    font-style: normal;
+    font-family : 'lobster two', cursive ;
+    color: white;
+    padding: 10px;
+}
+
 
 .icon{
     display: flex;
@@ -81,7 +89,7 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
+  border: none; 
   background: #f1f1f1;
 }
 
