@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+    <title>Grille css pour le responsive</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="We all are Winos" content="site de e-comerce de vin We all are Winos">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos&display=swap">
+    <link rel="stylesheet" href="../css/grille.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<header class = "fixed container">
+    
+    <div class = "logo"> 
+        <img src="../images/WAAW.jpg" alt="Avatar">
+        <p>We are all Winos</p>
+    </div>
+
+    <div class = "container">
+        <div id= "search_bar">
+            <input type="text" placeholder="Search..">
+        </div>
+        <div class = "nav">
+            <a href="../html/pages/nos_vins.html"> Nos Vins </a>
+            <a href="../html/pages/nos_coffrets.html"> Nos Coffrets </a>
+            <a href="../html/pages/nos_fournisseurs.html"> Nos Fournisseurs </a>
+            <a href="../html/pages/qui_sommes_nous.html"> Qui Sommes Nous </a>
+            <a href="../html/pages/blog.html"> Blog </a>
+            <a href="../html/pages/espace_client.html"> Espace Client </a>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div>
+            <i class="far fa-user"></i>
+        </div>
+    </div>
+
+</header>
+
+<form action="action_page.php">
+    <div class="container">
+        <h1>Inscivez vous ou connectez vous pour continuer</h1>
+        <hr>
+  
+        <label for="text"><b> Nom* </b></label>
+        <input type="text" placeholder="Entrez votre nom" name="nom" id="nom" required>
+  
+        <label for="text"><b>Prénom*</b></label>
+        <input type="text" placeholder="Enterer votre Prénom" name="prenom" id="prenom" required>
+  
+        <label for="psw"><b>Mot de passe*</b></label>
+        <input type="password" placeholder="Entrez un mot de passe" name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>Confirmez le mot de passe*</b></label>
+        <input type="password" placeholder="Entrez un mot de passe" name="psw-repeat" id="psw-repeat" required>
+
+        <hr>
+  
+        <p id= "cree_compte"> En créant un compte vous acceptez notre politique de confidentialité</p>
+        <button type="submit" class="registerbtn">Créer un compte</button>
+    </div>
+  
+    <div class="container signin">
+      <p id="sign_in">Vous avez dejà un compte? </p>
+      <button type="submit" class="registerbtn">Connectez vous</button>
+    </div>
+    <p id="asterisque">* Champs requis</p>
+  </form> 
