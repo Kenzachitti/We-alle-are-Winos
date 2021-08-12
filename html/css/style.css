@@ -155,3 +155,35 @@ hr {
 }
 
 
+
+
+nav {
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgb(240, 240, 240);
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  nav a {
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+  }
+  nav a:hover {
+    background: rgb(63, 63, 63);
+    color: #fff;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
