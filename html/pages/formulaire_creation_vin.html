@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+         <meta charset="utf-8">
+         <title>Formulaire de création de fiche de présentation de vin</title>
+         <meta name="description" content="Voici tous nos délicieux vins">
+         <link rel="stylesheet" href="../CSS/formulaire_creation_vin.css">
+         <link rel="stylesheet" href="../CSS/grille.css">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos&display=swap">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap">
+         <link rel="stylesheet" href="../css/style.css"> 
+    </head>
+
+    <body>
+        
+        <header class = "fixed container">
+    
+            <div class = "logo"> 
+                <img src="../images/WAAW.jpg" alt="Avatar">
+                <p>We are all Winos</p>
+            </div>
+        
+            <div class = "container">
+                <div id= "search_bar">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class = "nav">
+                    <a href="../pages/nos_vins.html"> Nos Vins </a>
+                    <a href="../pages/nos_coffrets.html"> Nos Coffrets </a>
+                    <a href="../pages/nos_fournisseurs.html"> Nos Fournisseurs </a>
+                    <a href="../pages/qui_sommes_nous.html"> Qui Sommes Nous </a>
+                    <a href="../pages/blog.html"> Blog </a>
+                    <a href="../pages/espace_client.html"> Espace Client </a>
+                </div>
+            </div>
+        
+            <div>
+                <div>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div>
+                    <i class="far fa-user"></i>
+                </div>
+            </div>
+        
+        </header>
+
+        <main>
+
+            <form action="action_page.php">
+                <div class="container">
+                    <h1>Ajoutez un vin ou un coffret</h1>
+                    <hr>
+              
+                    <label for="text"><b> Nom du vin* </b></label>
+                    <input type="text" placeholder="Entrez le nom du vin" name="nom" id="nom" required>
+              
+                    <label for="text"><b>Cépage et année*</b></label>
+                    <input type="text" placeholder="Entrez le cépage et l'année" name="cepage" id="cepage" required>
+              
+                    <label for="text"><b>Région d'origine*</b></label>
+                    <input type="text" placeholder="Entrez la région" name="region" id="region" required>
+            
+                    <label for="text"><b>Description*</b></label>
+                    <input type="text" placeholder="Entrez la description du vin" name="description" id="description" required>
+
+                    <label for="text"><b>Photo*</b></label>
+                    <input type="text" placeholder="Entrez la photo" name="photo" id="photo" required>
+
+                    <label for="text"><b>Stock*</b></label>
+                    <input type="text" placeholder="Entrez le stock" name="stock" id="stock" required>
+
+                    <label for="text"><b>Prix*</b></label>
+                    <input type="text" placeholder="Entrez le prix" name="prix" id="prix" required>
+            
+                    <button type="submit" class="registerbtn">Créer la fiche de présentation</button>
+                </div>
+              
+              </form> 
+
+
+
+        </main>
+
+
+        <footer>
+
+
+        </footer>
+        
+        
+
+    </body>
+</html>
